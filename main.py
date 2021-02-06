@@ -24,6 +24,11 @@ def wikipedia_route(company):
     result = wikipedia.summary(company, sentences=10)
     return result
 
+# Create test route
+@app.route('/test')
+def test():
+    return "This is a test"    
+
 # Run app on local host
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
