@@ -8,35 +8,47 @@ This particular app allows a user to input a date in MM-DD-YYYY format and the d
 2. Activate the Cloud Shell
 3. Configure the shell to run the project using the following command:
 
-> `gcloud config set project $GOOGLE_CLOUD PROJECT`
+```
+gcloud config set project $GOOGLE_CLOUD PROJECT
+```
 
 4. Clone the repo and change to its directory.
 
-> `git clone https://github.com/vprasad60/gcp-flask-cd.git`
-
-> `cd gcp-flask-cd`
+```
+git clone https://github.com/vprasad60/gcp-flask-cd.git
+cd gcp-flask-cd
+```
 
 5. Create and source a virtual environment
 
-> `virtualenv --python $(which python3) venv`
-
-> `source venv/bin/activate`
+```
+virtualenv --python $(which python3) venv
+source venv/bin/activate
+```
 
 6. Install the packages and lint 
 
-> `make all`
+```
+make all
+```
 
 7. Create the app in GCP App Engine and select a region
 
-> `gcloud app create`
+```
+gcloud app create
+```
 
 8. Run the application locally to test it 
 
-> `python main.py`
+```
+python main.py
+```
 
 9. Once you have tested, you can deploy the app
 
-> `gcloud app deploy`
+```
+gcloud app deploy
+```
 
 # Overview of GCP and Continuous Delivery
 Continuous Delivery (CD) enables developers to have their applications update based on specific commits/pushes to version control systems such as GitHub. Using GCP, we can take advantage of CD using the Cloud Build service. To set up Cloud Build with your specific repository, please see this [link](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories). Follow the instructions on setting up Cloud Build and creating triggers for new GitHub pushes. Note that you may need to connect the GitHub Cloud Build App to your repository to properly establish CD. 
