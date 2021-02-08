@@ -6,8 +6,14 @@ import datetime
 # Initialize app
 app = Flask(__name__)
 
-# Return day of the week for any date
+# Basic app route
 @app.route('/')
+def hello():
+    """Return a friendly HTTP greeting."""
+    return 'Hello World!'
+
+# Return day of the week for any date
+@app.route('/date/')
 def find_day():
     # Find today's date
     today = datetime.datetime.today().strftime('%m-%d-%Y')
@@ -27,7 +33,7 @@ def find_day():
             Date: <input type="text" name="date">
             <input type="submit" value="Find Day of the Week">
         </form>"""
-    + "Day of the week for " + date + ": " + day
+    + day
 )
   
 # Run app on local host
