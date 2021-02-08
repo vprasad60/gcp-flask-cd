@@ -51,13 +51,7 @@ gcloud app deploy
 ```
 
 # Overview of GCP and Continuous Delivery
-Continuous Delivery (CD) enables developers to have their applications update based on specific commits/pushes to version control systems such as GitHub. Using GCP, we can take advantage of CD using the Cloud Build service. To set up Cloud Build with your specific repository, please see this [link](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories). Follow the instructions on setting up Cloud Build and creating triggers for new GitHub pushes. Note that you may need to connect the GitHub Cloud Build App to your repository to properly establish CD. 
-
-In order for the CD to work, the App Engine API and Service Accounts services in the Cloud Build settings must be enabled, as shown in the image below. 
-
-If the triggers have been set up correctly, CD will update your app whenever you make new pushes to your repository. An example of this is shown in the image below. 
-
-
+Continuous Delivery (CD) enables developers to have their applications update based on specific commits/pushes to version control systems such as GitHub. Using GCP, we can take advantage of CD using the Cloud Build service. To set up Cloud Build with your specific repository, please see this [link](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories). Follow the instructions on setting up Cloud Build and creating triggers for new GitHub pushes. Note that you may need to connect the GitHub Cloud Build App to your repository to properly establish CD. In addition, ensure that the App Engine API and Service Accounts services in the Cloud Build settings have been enabled. If the triggers have been set up correctly, CD will update your app whenever you make new pushes to your repository. 
 
 # References
 [Tutorial of GCP and Flask by Noah Gift](https://github.com/noahgift/gcp-hello-ml)
