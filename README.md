@@ -1,7 +1,7 @@
 # Project Overview
 This project demonstrates continuous delivery with a simple Flask application in Google Cloud Platform. By using continuous delivery and integrating Github with GCP Cloud Build, adjustments made to the code and pushed to Github will automatically be reflected once the build has finished and the Flask application is refreshed. 
 
-This particular app allows a user to input a date in MM-DD-YYYY format and the day of the week for that specific date will be returned. By default, the app will return the day of the week of today's date unless a different date is entered. You can find the app itself as this [link](https://gcp-flask-cd.uc.r.appspot.com/).
+This particular app allows a user to input a date in MM-DD-YYYY format and the day of the week for that specific date will be returned. By default, the app will return the day of the week of today's date unless a different date is entered. You can find the app itself at this [link](https://gcp-flask-cd.uc.r.appspot.com/).
 
 # Setting up the Project
 1. Create a new project in GCP
